@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4"
+     xmlns:w="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wine="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine">
+        <owl:imports rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/acquistatoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/acquistatoDa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haAcquistato"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/emailDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/emailDi">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haEmail"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haAcquistato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haAcquistato">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haEmail -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haEmail">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haPrezzo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haPrezzo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/prezzoDi"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haQuantita -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haQuantita">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/quantitaDi"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/prezzoDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/prezzoDi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/quantitaDi -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/quantitaDi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/eProdotto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/eProdotto">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/prodottoDa"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/prodottoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/prodottoDa">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/phone -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/phone">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client">
+        <owl:equivalentClass rdf:resource="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haEmail"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haEmail"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#float"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#int"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/10/swap/pim/contact#Person -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine -->
+
+    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Wine">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haPrezzo"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/haPrezzo"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/eProdotto"/>
+                        <owl:allValuesFrom rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/eProdotto"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio_Binchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio_Binchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client"/>
+        <w:haAcquistato rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Bute"/>
+        <w:haAcquistato rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Tavernello"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario_Rossi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario_Rossi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Client"/>
+        <w:haAcquistato rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Bute"/>
+        <w:haAcquistato rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Nero_DAvola"/>
+        <w:haAcquistato rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChiantiClassico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/70">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Prezzo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio@email.com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio@email.com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email"/>
+        <w:emailDi rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio_Binchi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario@email.com -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario@email.com">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Email"/>
+        <w:emailDi rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario_Rossi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Bute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Bute">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Chianti"/>
+        <w:haQuantita rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/150"/>
+        <wine:eProdotto rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/PrincipiDiButera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Caviro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Caviro">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Nero_DAvola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Nero_DAvola">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Chianti"/>
+        <w:haQuantita rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/45"/>
+        <wine:eProdotto rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Sallemi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/PrincipiDiButera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/PrincipiDiButera">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Sallemi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Sallemi">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Winery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Tavernello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Tavernello">
+        <rdf:type rdf:resource="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#Chardonnay"/>
+        <w:haQuantita rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/243"/>
+        <wine:eProdotto rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/Caviro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/150 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/150">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/243 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/243">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gaian/ontologies/2023/6/wine/45 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/wine/45">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/QuantitaInMagazzino"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauChevalBlancStEmilion -->
+
+    <rdf:Description rdf:about="http://www.w3.org/TR/2003/PR-owl-guide-20031209/wine#ChateauChevalBlancStEmilion">
+        <w:haPrezzo rdf:resource="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/70"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio_Binchi"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario_Rossi"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Giulio@email.com"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gaian/ontologies/2023/6/untitled-ontology-4/Mario@email.com"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
